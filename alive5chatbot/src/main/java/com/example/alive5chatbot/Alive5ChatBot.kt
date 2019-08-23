@@ -8,7 +8,7 @@ import android.content.Intent
 
 class Alive5ChatBot {
 
-    fun show(c: Context, id: String) {
+    fun Alive5ChatBot.show(c: Context, id: String) {
 
      val intent = Intent(c,ChatBotView::class.java)
         intent.putExtra("id",id)
