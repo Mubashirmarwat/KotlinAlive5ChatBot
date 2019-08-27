@@ -11,6 +11,7 @@ class ChatBotView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_bot_view)
 
+        supportActionBar?.hide();
         var id:String = intent.getStringExtra("id")
         var url = "http://s3.amazonaws.com/alive5cdn/stage_chat_window.html?wid="+id
 webView.settings.javaScriptEnabled = true
